@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{todonotes}
+
+\def\e{\epsilon}
+\def\Ra{\Rightarrow}
+\def\S{\Sigma}
+
+\title{The rational fixpoint as algebraic closure}
+\author{Larry Moss and David Sprunger }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Given a presentable functor $F$, and let $H_\S$ be the related signature functor with $\e: H_\S\Ra F$ the quotient natural transformation. We will exhibit a generic connection between finite specifications in the signature $\S$ and points in the rational fixed point of $F$. We further develop a sound, complete, and decidable logic for determining equality of two pointed finite specifications.
+
+By a finite specification in $\S$ we mean a function of the form $d: X \to H_\S X$ where $X$ is a finite set. Such a specification induces a coalgebra structure on $X$ by postcomposing with $\e_X$; the function $\e_X \circ d: X \to FX$ gives a coalgebra structure on $X$. Since $F$ has a final coalgebra, this further induces semantics on $X$: we define $[[x]] := !_d(x)$ where $!_d$ is the final coalgebra map from the coalgebra structure induced by $d$ on $X$. This semantic map can be extended to all of $T_\S X$ in the natural way.
+
+\todo{David: I don't have a great understanding of this yet.} The rational fixed point is the final locally finite coalgebra. In particular, locally finite means each element of the rational fixed point is contained in a finite coalgebra. The finality means it is the colimit of all finite coalgebras, so all finite coalgebras can be found somewhere in the rational fixed point (???)
+
+\section{The main idea}
+
+We've already seen that a finite specification induces a coalgebra structure on the (finite) set of variables. Therefore, we can find an isomorphic copy of 
+
+\section{Conclusion}
+
+\newpage
+\listoftodos
+
+\end{document}
